@@ -1,2 +1,2 @@
 # Bqa-Repo
-This repo is created for bqas1 team for Testathon
+This repo is created by bqas1 team for Testathon

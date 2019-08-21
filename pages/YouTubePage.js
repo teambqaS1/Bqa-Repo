@@ -39,7 +39,7 @@ exports.clickOnVideosTAB= function () {
 exports.apiCall= function (shellScriptPath) {
     shell.exec(shellScriptPath);
 };
-//#video-title
+
 exports.searchTheVideo  = function(){
     element.all(by.css(loginLocators.videos_Link_Css)).each(function(element, index) {
         // Will print 0 First, 1 Second, 2 Third.

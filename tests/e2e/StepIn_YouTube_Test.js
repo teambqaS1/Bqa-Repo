@@ -7,12 +7,14 @@ const upath = require('upath');
 var youtubePage = require('../../pages/YouTubePage.js');
 var CommonLibrary = require('../../CommonUtils/CommonLibrary.js');
 var testData = require('../../testdata/TestData.json');
-var txtFilePath = path.resolve(__dirname, "../../api/hello.txt");
-/*var shellScriptPath = path.resolve(__dirname, "../../api/FirstCall.sh");
-const shell = require('shelljs');*/
+var txtFilePath = path.resolve(__dirname, "hello.txt");
+var shellScriptPath = path.resolve(__dirname, "../../api/FirstCall.sh");
+const shell = require('shelljs');
+var searchString;
 describe('StepIn_YouTube', function () {
 
     it('00_Launch Youtube', function () {
+        youtubePage.apiCall(shellScriptPath);
         youtubePage.loadUrl(env.appURL);
      });
 
@@ -33,14 +35,35 @@ describe('StepIn_YouTube', function () {
     });
 
     it('06_read text file', function () {
-        browserinstance.sleep(10000);
+           searchString = fs.readFileSync(txtFilePath, 'utf8');
+           console.log(searchString);
     });
 
     it('07_search and hit the video link', function () {
-        youtubePage.searchTheVideo();
+
+        youtubePage.searchVideo(searchString);
+        //youtubePage.clickOnFirstVideo();
     });
 
-    /*it('08_search and hit the video link', function () {
-        youtubePage.searchTheVideo();
-    });*/
+    it('08_Click on settings button', function () {
+        youtubePage.clickOnSettingsButton();
+    });
+
+    it('09_Click on Quality', function () {
+        youtubePage.clickOnQuality()
+    });
++
+    it('10_Click on Quality', function () {
+        youtubePage.clickOn360P();
+    });
+
+    it('11_ Quality check', function () {
+        youtubePage.assertVideoQuality();
+    });
+
+    it('12_ upcoming videos', function () {
+        youtubePage.upComingVideos();
+    });
+
+
 });

@@ -3,5 +3,10 @@
   "youTube_SearchButton_Css":"#search-form #search-icon-legacy",
   "stepinForum_Link_Xpath":"//a[@href='/user/stepinforum']/div[@id='avatar']",
   "videos_Tab_Xpath":"//div[@id='tabsContainer']//div[@class='tab-content style-scope paper-tab' and contains(.,'Videos')]",
-  "videos_Link_Css":"#items #video-title"
+  "videos_Link_Css":"#items #video-title",
+  "settings_Button_Xpath":"//button[@title='Settings']",
+  "quality_Div_Xpath":"//div[@class='ytp-popup ytp-settings-menu']//div[@class='ytp-menuitem-label' and text()='Quality']/following-sibling::div",
+  "firstVideo":"//a[@id='video-title' and text()='SUMMIT 2019 Promo']",
+  "youTubeVideo_PlayArea_Css":"#movie_player video",
+  "upComingVideos_Xpath":"//ytd-compact-video-renderer//span[@id='video-title']"
 }

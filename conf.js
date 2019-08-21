@@ -61,7 +61,7 @@ exports.config = {
 
     useAllAngular2AppRoots: true,
     jasmineNodeOpts: {
-        defaultTimeoutInterval: 90000,
+        defaultTimeoutInterval: 300000,
         stopSpecOnExpectationFailure: true,
         realtimeFailure: true
     },

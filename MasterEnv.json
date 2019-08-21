@@ -1,0 +1,19 @@
+{
+  "aws": {
+		"testEnv": {
+			"appURL":"https://www.youtube.com/"
+		},
+		"uatEnv": {
+		},
+		"prodEnv": {
+		}
+	},
+  "azure": {
+		"testEnv": {     
+		},
+		"uatEnv": {
+		},
+		"prodEnv": {
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "youTube_SearchBox_Css":"#search-form #search",
+  "youTube_SearchButton_Css":"#search-form #search-icon-legacy",
+  "stepinForum_Link_Xpath":"//a[@href='/user/stepinforum']/div[@id='avatar']",
+  "videos_Tab_Xpath":"//div[@id='tabsContainer']//div[@class='tab-content style-scope paper-tab' and contains(.,'Videos')]",
+  "videos_Link_Css":"#items #video-title"
+}
